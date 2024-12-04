@@ -1,4 +1,3 @@
-// This import makes the file a module
 import React from "react";
 import { Recipe } from "../../types/RecipeTypes";
 import {

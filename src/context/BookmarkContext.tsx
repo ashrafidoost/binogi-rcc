@@ -7,12 +7,12 @@ interface BookmarkContextType {
   removeBookmark: (recipe: Recipe) => void;
 }
 
-// Define the context type
+// The context type
 const BookmarkContext = createContext<BookmarkContextType | undefined>(
   undefined
 );
 
-// Custom hook to access bookmark context
+// Hook to access bookmark context
 export const useBookmarks = () => {
   const context = useContext(BookmarkContext);
   if (!context) {
@@ -21,7 +21,7 @@ export const useBookmarks = () => {
   return context;
 };
 
-// Define the type for BookmarkProvider props
+// The type for BookmarkProvider props
 interface BookmarkProviderProps {
   children: React.ReactNode;
 }

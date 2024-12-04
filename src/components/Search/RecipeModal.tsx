@@ -6,7 +6,6 @@ import {
   DialogTitle,
   Button,
   Typography,
-  List,
 } from "@mui/material";
 import { useBookmarks } from "../../context/BookmarkContext";
 import { Recipe } from "../../types/RecipeTypes";
